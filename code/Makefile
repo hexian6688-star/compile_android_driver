@@ -1,5 +1,5 @@
 # Makefile for GKI driver 
-obj-m += char_device_driver.o 
+obj-m += dettouch.o 
  
 KDIR := /lib/modules/$(shell uname -r)/build 
 PWD := $(shell pwd) 
@@ -9,3 +9,4 @@ all:
  
 clean: 
 	$(MAKE) -C $(KDIR) M=$(PWD) clean 
+
